@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formato</title>
+    <link rel="stylesheet" href="format.css">
+  </head>
+  <body>
+    <header class="container">
+      <div>
+        <a href="" id="ir">inicio</a>
+      </div>
+      <div class="head_logo">
+        <a class="logo" id="logo"><img src=${logo} alt=""></a>
+      </div>
+      <div class="head_datos" id="head_datos">
+        <div class="dato_1">
+          <div>
+            <label for="orden">ORDEN :</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="paciente">PACIENTE :</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="compania">COMPAÑIA :</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="medico">MÉDICO :</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="dato_2">
+          <div>
+            <label for="dni">DNI :</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="sexo">SEXO :</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="dato_3">
+          <div>
+            <label for="edad">EDAD :</label>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+
+      <main>
+            RESULTADOS
+      </main>
+      <footer>
+            FIRMA DIRECCION
+      </footer>
+    </header>
+    <script>
+      const ir = document.getElementById('ir');
+
+      ir.addEventListener('click', ()=>{
+        window.location.href = 'localhost:5173'
+      })
+    </script>
+  </body>
+</html>
